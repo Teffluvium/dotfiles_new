@@ -1,0 +1,172 @@
+# ~/.bashrc: executed by bash(1) for non-login shells.
+# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
+# for examples
+# We use preexec and precmd hook functions for Bash
+# If you have anything that's using the Debug Trap or PROMPT_COMMAND
+# change it to use preexec or precmd
+# See also https://github.com/rcaloras/bash-preexec
+
+# Add ~/bin and ./ to the PATH
+export PATH=~/bin:./:$PATH
+
+# Completion options
+# ##################
+
+# These completion tuning parameters change the default behavior of bash_completion:
+
+# Define to access remotely checked-out files over passwordless ssh for CVS
+# COMP_CVS_REMOTE=1
+
+# Define to avoid stripping description in --option=description of './configure --help'
+COMP_CONFIGURE_HINTS=1
+
+# Define to avoid flattening internal contents of tar files
+COMP_TAR_INTERNAL_PATHS=1
+
+# If this shell is interactive, turn on programmable completion enhancements.
+# Any completions you add in ~/.bash_completion are sourced last.
+# case $- in
+#   *i*) [[ -f /etc/bash_completion ]] && . /etc/bash_completion ;;
+# esac
+
+
+# History Options
+# ###############
+
+# Don't put duplicate lines in the history.
+export HISTCONTROL="ignoreboth"
+
+# Ignore some controlling instructions
+export HISTIGNORE="[   ]*:&:bg:fg:exit"
+
+# Whenever displaying the prompt, write the previous line to disk
+export PROMPT_COMMAND="history -a; history -n; ${PROMPT_COMMAND}"   # mem/file sync
+
+# Save lots of history information
+export HISTFILESIZE=20000
+export HISTSIZE=${HISTFILESIZE}
+
+# don't put duplicate lines or lines starting with space in the history.
+# See bash(1) for more options
+HISTCONTROL=ignoreboth
+
+export HH_CONFIG=hicolor         # get more colors
+shopt -s histappend              # append new history items to .bash_history
+export HISTCONTROL=ignorespace   # leading space hides commands from history
+# if this is interactive shell, then bind hh to Ctrl-r (for Vi mode check doc)
+if [[ $- =~ .*i.* ]]; then bind '"\C-h": "\C-a hh \C-j"'; fi
+
+# Load environment settings from gnome-keyring-daemon
+#export `gnome-keyring-daemon`
+
+# Aliases
+# #######
+
+# Some example alias instructions
+# If these are enabled they will be used instead of any instructions
+# they may mask.  For example, alias rm='rm -i' will mask the rm
+# application.  To override the alias instruction use a \ before, ie
+# \rm will call the real rm not the alias.
+
+# enable color support of some aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
+
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+
+    alias ls='ls -hF --color=tty'
+    alias dir='ls --color=auto --format=vertical'
+    alias vdir='ls --color=auto --format=long'
+fi
+
+# Interactive operation...
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+# Default to human readable figures
+alias df='df -h'
+alias du='du -h'
+
+# truncated list of history items
+alias h='history 20'
+
+# Misc :)
+alias less='less -r'                          # raw control characters
+alias whence='type -a'                        # where, of a sort
+
+# Some shortcuts for different directory listings
+alias la='ls -A'                              # all (except . and .. )
+alias ll='ls -l'                              # long list
+alias lla='ls -lA'                            # long list of all (except . and .. )
+alias l='ls -CF'                              #
+
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias dirs='builtin dirs -v'
+
+# Add an "alert" alias for long running commandss.  Use like so:
+#   sleep 10; alert
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+
+# Alias definitions.
+# You may want to put all your additions into a separate file like
+# ~/.bash_aliases, instead of adding them here directly.
+# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+
+# export DOTFILES="$HOME/.dotfiles"
+export DOTFILES="$HOME/dotfiles"
+
+alias reload="source ~/.bashrc;echo Bash Reloaded."
+alias rl=reload
+
+# Place to stash environment variables
+if [[ -a ~/.secrets ]]
+then
+  source ~/.secrets
+fi
+
+# Load aliases
+for f in $DOTFILES/aliases/*.aliases.sh; do source $f; done
+
+# Load bash only functions
+for f in $DOTFILES/bash/functions/*; do source $f; done
+
+# Load all path files
+for f in $DOTFILES/path/*.path.sh; do source $f; done
+
+# inputrc preferences
+bind "set completion-ignore-case on"
+bind "set show-all-if-ambiguous on"
+
+# enable programmable completion features (you don't need to enable
+# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
+# sources /etc/bash.bashrc).
+if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+  fi
+fi
+
+if [ $(uname) == "Darwin" ]; then
+    export ANDROID_NDK_HOME="/usr/local/share/android-ndk"
+    export ANDROID_SDK_ROOT="/usr/local/share/android-sdk"
+fi
+
+# Functions
+# #########
+
+# Generate a recursive list of unique file extensions
+function listUniqueExtensions(){
+    find . -type f | sed -n 's/.*\(\<\w\+\)/\1/p' | sort -u
+}
+
