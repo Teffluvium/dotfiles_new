@@ -40,10 +40,12 @@
       force: true
 
     # VS Code MacOS
-    ~/Library/Application Support/Code/User:
+    # ~/Library/Application Support/Code/User/:
+    ~/Library/Application Support/Code/User/settings.json:
       if: "[ `uname` = Darwin ]"
-      glob: true
-      path: vscode/macos/*.json
+      path: vscode/macos/settings.json
+      # glob: true
+      # path: vscode/macos/*.json
       force: true
 
 - shell:
