@@ -33,7 +33,8 @@
     ~/.gitattributes: git/gitattributes
     ~/.gitignore_global: git/gitignore_global
 
-    # Apps
+    # Vim
+    ~/.vimrc: vim/vimrc
 
     # VS Code Linux
     ~/.config/Code/User:

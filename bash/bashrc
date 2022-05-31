@@ -157,11 +157,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-if [ $(uname) == "Darwin" ]; then
-    export ANDROID_NDK_HOME="/usr/local/share/android-ndk"
-    export ANDROID_SDK_ROOT="/usr/local/share/android-sdk"
-fi
-
 # Functions
 # #########
 
