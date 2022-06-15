@@ -1,0 +1,47 @@
+.PHONY: help
+.PHONY: install macos brew-save brew-restore vscode-save vscode-restore save-all
+
+# List the make targets
+help:
+	@echo "Available targets:"
+	@echo "  install        - Run the dotbot install script"
+	@echo "  macos          - Set the MacOS defaults"
+	@echo "  brew-save      - Save a snapshot of the current brew installation"
+	@echo "  brew-restore   - Restore the Homebrew packages"
+	@echo "  vscode-save    - Save the VSCode extensions"
+	@echo "  vscode-install - Install the VSCode extensions"
+	@echo "  save-all       - Run the above 'save' targets"
+
+# Run dotbot install script
+install:
+	./install
+
+# Install extensions from vscode/extensions.txt
+vscode-install:
+	cat ${DOTFILES}/vscode/extensions.txt | xargs -L 1 code --install-extension
+
+# Save all current extensions to vscode/extensions.txt
+vscode-save:
+	code --list-extensions > ${DOTFILES}/vscode/extensions.txt
+
+# Save snapshot of all Homebrew packages to macos/Brewfile
+brew-save:
+	brew bundle dump -f --file=macos/Brewfile
+	brew bundle --force cleanup --file=macos/Brewfile
+
+# Restore Homebrew packages
+brew-restore:
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+	brew update
+	brew upgrade
+	brew install mas
+	brew bundle install --file=macos/Brewfile
+	brew cleanup
+
+# Set MacOS defaults
+macos:
+	./macos/set-defaults.sh
+
+# Run all of the "save" targets
+save-all: brew-save vscode-save
+
