@@ -34,7 +34,7 @@
     ~/.gitignore_global: git/gitignore_global
 
     # Vim
-    ~/.vimrc: vim/vimrc
+    ~/.vim: vim/
 
     # VS Code Linux
     ~/.config/Code/User:
