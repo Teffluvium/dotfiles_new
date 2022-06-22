@@ -213,8 +213,7 @@ set noshowmode
 "" ============================================================================
 ""                               Auto Commands
 "" ============================================================================
-" Quickfix
-autocmd FileType qf setlocal colorcolumn=
+filetype plugin indent on
 
 " XML
 autocmd FileType xml setlocal equalprg=xmllint\ --format\ -
@@ -224,10 +223,6 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 " set appropriate commentstrings
 autocmd FileType cpp setlocal commentstring=//\ %s
-autocmd FileType textpb setlocal commentstring=#\ %s
-
-" formatting for netrw
-autocmd FileType netrw setlocal nolist colorcolumn=
 
 " equalize splits when window resized
 autocmd VimResized * exe "normal! \<c-w>="
