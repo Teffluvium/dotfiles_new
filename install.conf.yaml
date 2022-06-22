@@ -13,6 +13,8 @@
       stdout: true
 
 - link:
+    ~/.dotfiles: ""
+
     # Shell stuff
     ~/bin:
       glob: true
