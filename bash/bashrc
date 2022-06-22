@@ -135,6 +135,9 @@ fi
 # Load aliases
 for f in $DOTFILES/aliases/*.aliases.sh; do source $f; done
 
+# Load functions
+for f in $DOTFILES/functions/*; do source $f; done
+
 # Load bash only functions
 for f in $DOTFILES/bash/functions/*; do source $f; done
 
