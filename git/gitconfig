@@ -1,5 +1,5 @@
 [user]
-	name = Tim Herrin
+    name = Tim Herrin
     email = teffluvium@gmail.com
     # email = tim.herrin@systechone.com
     # email = tim@vordata.com
@@ -10,8 +10,6 @@
     br         = branch
     co         = checkout
     editlast   = commit --amend -m
-    fza        = !git ls-files -m -o --exclude-standard | fzf -m --print0 --preview-window down,90% --preview \"git diff $@ -- {-1} | delta\" | xargs -0 -o -t git add -p
-    fzau       = !git ls-files -m --exclude-standard | fzf -m --print0 --preview-window down,90% --preview \"git diff $@ -- {-1} | delta\" | xargs -0 -o -t git add -p
     hist       = log --oneline --graph --decorate --all
     last       = log -1 HEAD
     pom        = push origin master
@@ -24,7 +22,7 @@
     undolast   = reset HEAD~1
     unp        = log origin/master..HEAD
     unstage    = reset HEAD --
-    
+
     # Fancy logs
     l  = log --oneline --graph --decorate --all
     l1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(blue)<%an>%Creset%C(yellow)%d%Creset' --all
