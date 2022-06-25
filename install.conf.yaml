@@ -37,6 +37,7 @@
 
     # Vim
     ~/.vim: vim/
+    #~/.vimrc: vim/vimrc
 
     # VS Code Linux
     ~/.config/Code/User:

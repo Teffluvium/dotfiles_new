@@ -1,5 +1,6 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-drivers"
 tap "homebrew/core"
 brew "boost"
 brew "brew-cask-completion"
@@ -27,6 +28,7 @@ cask "android-ndk"
 cask "android-sdk"
 cask "android-studio"
 cask "appcleaner"
+cask "archiver"
 cask "beyond-compare"
 cask "brackets"
 cask "clion"
@@ -34,6 +36,7 @@ cask "dash"
 cask "google-chrome"
 cask "iterm2"
 cask "lastpass"
+cask "logitech-options"
 cask "mactex"
 cask "microsoft-auto-update"
 cask "microsoft-office"
@@ -46,6 +49,7 @@ cask "vnc-viewer"
 mas "Compressor", id: 424390742
 mas "Final Cut Pro", id: 424389933
 mas "GarageBand", id: 682658836
+mas "Hidden Bar", id: 1452453066
 mas "iMovie", id: 408981434
 mas "iStatistica Pro", id: 1447778660
 mas "Keynote", id: 409183694
