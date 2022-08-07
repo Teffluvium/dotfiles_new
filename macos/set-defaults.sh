@@ -74,6 +74,7 @@ echo "  › Enable tap to click for trackpad"
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
+
 #############################
 
 echo ""
