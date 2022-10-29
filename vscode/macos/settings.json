@@ -1,26 +1,24 @@
 {
-    "workbench.colorTheme": "Default Dark+",
-    "github.copilot.enable": {
-      "*": true,
-      "yaml": false,
-      "plaintext": false,
-      "python": true,
-      "markdown": false
-    },
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": true
-    },
-    "editor.formatOnSave": true,
-    "editor.formatOnSaveMode": "file",
+  "workbench.colorTheme": "Default Dark+",
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "python": true,
+    "markdown": false
+  },
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
   "editor.inlineSuggest.enabled": true,
-    "python.formatting.provider": "black",
-    "python.linting.flake8Enabled": true,
-    "python.linting.pylintEnabled": true,
-    "python.testing.pytestArgs": [
-      "tests"
-    ],
-    "python.testing.pytestEnabled": true,
-    "python.testing.unittestEnabled": false,
-    "vim.smartRelativeLine": true,
-    "python.linting.mypyEnabled": true,
-  }
+  "python.formatting.provider": "black",
+  "python.linting.flake8Enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.testing.pytestArgs": ["tests"],
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "vim.smartRelativeLine": true,
+  "python.linting.mypyEnabled": true
+}
