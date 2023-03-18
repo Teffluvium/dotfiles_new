@@ -1,3 +1,4 @@
+bungcip.better-toml
 cschlosser.doxdocgen
 eamodio.gitlens
 esbenp.prettier-vscode
@@ -5,7 +6,9 @@ GitHub.copilot
 jeff-hykin.better-cpp-syntax
 mechatroner.rainbow-csv
 ms-azuretools.vscode-docker
+ms-python.flake8
 ms-python.isort
+ms-python.pylint
 ms-python.python
 ms-python.vscode-pylance
 ms-toolsai.jupyter
@@ -13,6 +16,7 @@ ms-toolsai.jupyter-keymap
 ms-toolsai.jupyter-renderers
 ms-toolsai.vscode-jupyter-cell-tags
 ms-toolsai.vscode-jupyter-slideshow
+ms-vscode-remote.remote-containers
 ms-vscode.cmake-tools
 ms-vscode.cpptools
 ms-vscode.cpptools-extension-pack
