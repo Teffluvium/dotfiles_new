@@ -23,5 +23,8 @@
   "python.linting.mypyEnabled": true,
   "[python]": {
     "editor.formatOnType": true
-  }
+  },
+  "autoDocstring.guessTypes": true,
+  "autoDocstring.docstringFormat": "google",
+  "autoDocstring.logLevel": "INFO",
 }
