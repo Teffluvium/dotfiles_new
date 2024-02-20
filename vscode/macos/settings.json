@@ -22,9 +22,11 @@
   "vim.smartRelativeLine": true,
   "python.linting.mypyEnabled": true,
   "[python]": {
-    "editor.formatOnType": true
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "ms-python.black-formatter"
   },
   "autoDocstring.guessTypes": true,
   "autoDocstring.docstringFormat": "google",
   "autoDocstring.logLevel": "INFO",
+  "editor.accessibilitySupport": "off"
 }
