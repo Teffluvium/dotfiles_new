@@ -8,7 +8,7 @@
     "markdown": false
   },
   "editor.codeActionsOnSave": {
-    "source.organizeImports": true
+    "source.organizeImports": "explicit"
   },
   "editor.formatOnSave": true,
   "editor.formatOnSaveMode": "file",
@@ -28,5 +28,6 @@
   "autoDocstring.guessTypes": true,
   "autoDocstring.docstringFormat": "google",
   "autoDocstring.logLevel": "INFO",
-  "editor.accessibilitySupport": "off"
+  "editor.accessibilitySupport": "off",
+  "git.openRepositoryInParentFolders": "always"
 }

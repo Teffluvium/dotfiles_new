@@ -2,6 +2,7 @@ tap "homebrew/bundle"
 tap "homebrew/cask-drivers"
 brew "boost"
 brew "brew-cask-completion"
+brew "sqlite"
 brew "cmake"
 brew "curl"
 brew "dash", link: false
@@ -12,7 +13,6 @@ brew "git"
 brew "git-lfs"
 brew "graphviz"
 brew "jsoncpp"
-brew "sqlite"
 brew "make"
 brew "mas"
 brew "mysql"
@@ -64,6 +64,7 @@ mas "Hidden Bar", id: 1452453066
 mas "iMovie", id: 408981434
 mas "iStatistica Pro", id: 1447778660
 mas "Keynote", id: 409183694
+mas "LastPass", id: 926036361
 mas "Logic Pro", id: 634148309
 mas "MainStage", id: 634159523
 mas "Messenger", id: 1480068668
