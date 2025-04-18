@@ -167,3 +167,5 @@ function listUniqueExtensions(){
     find . -type f | sed -n 's/.*\(\<\w\+\)/\1/p' | sort -u
 }
 
+eval "$(uv generate-shell-completion bash)"
+eval "$(uvx --generate-shell-completion bash)"
