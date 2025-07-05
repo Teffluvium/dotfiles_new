@@ -1,33 +1,58 @@
 {
+  // General settings
   "workbench.colorTheme": "Default Dark+",
-  "github.copilot.enable": {
-    "*": true,
-    "yaml": false,
-    "plaintext": false,
-    "python": true,
-    "markdown": false
-  },
-  "editor.codeActionsOnSave": {
-    "source.organizeImports": "explicit"
-  },
   "editor.formatOnSave": true,
   "editor.formatOnSaveMode": "file",
   "editor.inlineSuggest.enabled": true,
-  "python.formatting.provider": "black",
-  "python.linting.flake8Enabled": true,
-  "python.linting.pylintEnabled": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.mypycache__": true,
+    "**/.svn": true,
+    "**/Thumbs.db": true,
+  },
+
+  // Copilot settings
+  "github.copilot.enable": {
+    "*": true,
+    "markdown": true,
+    "plaintext": false,
+    "python": true,
+    "yaml": true,
+  },
+
+  // Python settings
+  // "python.formatting.provider": "black",
+  // "python.linting.flake8Enabled": true,
+  // "python.linting.pylintEnabled": true,
   "python.testing.pytestArgs": ["tests"],
   "python.testing.pytestEnabled": true,
   "python.testing.unittestEnabled": false,
-  "vim.smartRelativeLine": true,
   "python.linting.mypyEnabled": true,
   "[python]": {
-    "editor.formatOnType": true,
-    "editor.defaultFormatter": "ms-python.black-formatter"
+    // "editor.formatOnType": true,
+    // "editor.defaultFormatter": "ms-python.black-formatter"
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      // "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
+    },
   },
+  "python.analysis.inlayHints.variableTypes": true,
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.typeCheckingMode": "off",
+
+  "vim.smartRelativeLine": true,
+
   "autoDocstring.guessTypes": true,
   "autoDocstring.docstringFormat": "google",
-  "autoDocstring.logLevel": "INFO",
+  "autoDocstring.logLevel": "Info",
   "editor.accessibilitySupport": "off",
-  "git.openRepositoryInParentFolders": "always"
+  "git.openRepositoryInParentFolders": "always",
+  "makefile.configureOnOpen": true
 }
