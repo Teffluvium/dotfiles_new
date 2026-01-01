@@ -13,7 +13,7 @@
     "**/.hg": true,
     "**/.mypycache__": true,
     "**/.svn": true,
-    "**/Thumbs.db": true,
+    "**/Thumbs.db": true
   },
 
   // Copilot settings
@@ -22,7 +22,7 @@
     "markdown": true,
     "plaintext": false,
     "python": true,
-    "yaml": true,
+    "yaml": true
   },
 
   // Python settings
@@ -41,7 +41,7 @@
     "editor.codeActionsOnSave": {
       // "source.fixAll": "explicit",
       "source.organizeImports": "explicit"
-    },
+    }
   },
   "python.analysis.inlayHints.variableTypes": true,
   "python.analysis.inlayHints.functionReturnTypes": true,
@@ -54,5 +54,7 @@
   "autoDocstring.logLevel": "Info",
   "editor.accessibilitySupport": "off",
   "git.openRepositoryInParentFolders": "always",
-  "makefile.configureOnOpen": true
+  "makefile.configureOnOpen": true,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "chat.viewSessions.orientation": "stacked"
 }
