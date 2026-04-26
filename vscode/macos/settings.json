@@ -1,6 +1,6 @@
 {
   // General settings
-  "workbench.colorTheme": "Default Dark+",
+  "workbench.colorTheme": "Dark+",
   "editor.formatOnSave": true,
   "editor.formatOnSaveMode": "file",
   "editor.inlineSuggest.enabled": true,
