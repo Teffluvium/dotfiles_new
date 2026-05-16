@@ -3,7 +3,6 @@ cschlosser.doxdocgen
 docker.docker
 eamodio.gitlens
 esbenp.prettier-vscode
-github.copilot-chat
 github.vscode-github-actions
 github.vscode-pull-request-github
 jeff-hykin.better-cpp-syntax
