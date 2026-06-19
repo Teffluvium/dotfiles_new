@@ -1,65 +1,128 @@
+# Collection of portable C++ source libraries
 brew "boost"
+# Fish completion for brew-cask
 brew "brew-cask-completion"
+# Cross-platform make
 brew "cmake"
+# Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
+# POSIX-compliant descendant of NetBSD's ash (the Almquist SHell)
 brew "dash-shell"
+# Convert text between DOS, UNIX, and Mac formats
 brew "dos2unix"
+# Generate documentation for several programming languages
 brew "doxygen"
+# Play, record, convert, and stream select audio and video codecs
 brew "ffmpeg"
+# GNU compiler collection
 brew "gcc"
+# GitHub command-line tool
 brew "gh"
+# Distributed revision control system
 brew "git"
+# Syntax-highlighting pager for git and diff output
 brew "git-delta"
+# Git extension for versioning large files
 brew "git-lfs"
+# Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
+# Improved top (interactive process viewer)
 brew "htop"
+# C/C++ and Java libraries for Unicode and globalization
 brew "icu4c@76"
+# Library for interacting with JSON
 brew "jsoncpp"
+# Utility for directing compilation
 brew "make"
+# Mac App Store command-line interface
 brew "mas"
+# Open source relational database management system
 brew "mysql"
+# Swiss-army knife of markup format conversion
 brew "pandoc"
+# Pandoc filter for numbering and cross-referencing
 brew "pandoc-crossref"
+# Pandoc filter for including code from source files
 brew "pandoc-include-code"
+# Render and include figures in Pandoc documents using many plotting toolkits
 brew "pandoc-plot"
+# Package compiler and linker metadata toolkit
 brew "pkgconf"
+# Cross-platform library for audio I/O
 brew "portaudio"
+# Python version management
 brew "pyenv"
+# Pyenv plugin to manage virtualenv
 brew "pyenv-virtualenv"
+# Extremely fast Python linter, written in Rust
 brew "ruff"
+# Command-line interface for SQLite
 brew "sqlite"
+# Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
+# Vi 'workalike' with many additional features
 brew "vim"
+# Internet file retriever
 brew "wget"
+# Additional completion definitions for zsh
 brew "zsh-completions"
+# Collection of apps and services for photography, design, video, web, and UX
 cask "adobe-creative-cloud"
+# Utility to clean up corrupted installations of Adobe software
 cask "adobe-creative-cloud-cleaner-tool"
+# Transfer files from and to an Android smartphone
 cask "android-file-transfer"
+# Application uninstaller
 cask "appcleaner"
+# Open archives, compress files, as well as split and combine files
 cask "archiver-app"
+# Tool to flash OS images to SD cards & USB drives
 cask "balenaetcher"
+# Compare files and folders
 cask "beyond-compare"
+# Open-source code editor for web-development
 cask "brackets"
+# C and C++ IDE
 cask "clion"
+# Xcode extension for GitHub Copilot
 cask "copilot-for-xcode"
+# API documentation browser and code snippet manager
 cask "dash"
+# App to build and share containerised applications and microservices
 cask "docker-desktop"
+# Web browser
 cask "google-chrome"
+# Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# Password manager
 cask "lastpass"
+# Software for Logitech devices
 cask "logi-options+"
+# Full TeX Live distribution with GUI applications
 cask "mactex"
+# Provides updates to various Microsoft products
 cask "microsoft-auto-update"
+# Office suite
 cask "microsoft-office"
+# JDK from Oracle
 cask "oracle-jdk"
+# Collaboration platform for API development
 cask "postman"
+# Imaging utility to install operating systems to a microSD card
 cask "raspberry-pi-imager"
+# Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
+# Team communication and collaboration software
 cask "slack"
+# Text editor for code, markup and prose
 cask "sublime-text"
+# Xcode Extension for reformatting Swift code
 cask "swiftformat-for-xcode"
+# Open-source code editor
 cask "visual-studio-code"
+# Multimedia player
 cask "vlc"
+# Remote desktop application focusing on security
 cask "vnc-viewer"
 mas "Compressor", id: 424390742
 mas "Final Cut Pro", id: 424389933
