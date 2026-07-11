@@ -16,6 +16,8 @@ brew "doxygen"
 brew "ffmpeg"
 # GNU compiler collection
 brew "gcc"
+# TIFF library and utilities
+brew "libtiff"
 # GitHub command-line tool
 brew "gh"
 # Distributed revision control system
