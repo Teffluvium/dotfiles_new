@@ -82,7 +82,6 @@ cask "archiver-app"
 cask "balenaetcher"
 # Compare files and folders
 cask "beyond-compare"
-# Open-source code editor for web-development
 cask "brackets"
 # C and C++ IDE
 cask "clion"
