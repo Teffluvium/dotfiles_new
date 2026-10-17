@@ -111,6 +111,8 @@ cask "oracle-jdk"
 cask "postman"
 # Imaging utility to install operating systems to a microSD card
 cask "raspberry-pi-imager"
+# Remote desktop application focusing on security
+cask "realvnc-connect-viewer"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
 # Team communication and collaboration software
@@ -123,8 +125,6 @@ cask "swiftformat-for-xcode"
 cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
-# Remote desktop application focusing on security
-cask "vnc-viewer"
 mas "Compressor", id: 424390742
 mas "Final Cut Pro", id: 424389933
 mas "GarageBand", id: 682658836
