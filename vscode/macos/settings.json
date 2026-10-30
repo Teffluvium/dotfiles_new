@@ -5,7 +5,7 @@
   "editor.formatOnSaveMode": "file",
   "editor.inlineSuggest.enabled": true,
   "editor.codeActionsOnSave": {
-    "source.organizeImports": "explicit"
+    "source.organizeImports": "explicit",
   },
   "files.exclude": {
     "**/.DS_Store": true,
@@ -13,7 +13,7 @@
     "**/.hg": true,
     "**/.mypycache__": true,
     "**/.svn": true,
-    "**/Thumbs.db": true
+    "**/Thumbs.db": true,
   },
 
   // Copilot settings
@@ -22,7 +22,7 @@
     "markdown": true,
     "plaintext": false,
     "python": true,
-    "yaml": true
+    "yaml": true,
   },
 
   // Python settings
@@ -40,8 +40,8 @@
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
       // "source.fixAll": "explicit",
-      "source.organizeImports": "explicit"
-    }
+      "source.organizeImports": "explicit",
+    },
   },
   "python.analysis.inlayHints.variableTypes": true,
   "python.analysis.inlayHints.functionReturnTypes": true,
@@ -56,5 +56,7 @@
   "git.openRepositoryInParentFolders": "always",
   "makefile.configureOnOpen": true,
   "github.copilot.nextEditSuggestions.enabled": true,
-  "chat.viewSessions.orientation": "stacked"
+  "chat.viewSessions.orientation": "stacked",
+  "chat.agentHost.agentDebugLog.enabled": true,
+  "github.copilot.chat.agentDebugLog.fileLogging.enabled": true,
 }

@@ -52,14 +52,16 @@ brew "pandoc-plot"
 brew "pkgconf"
 # Cross-platform library for audio I/O
 brew "portaudio"
+# Command-line interface for SQLite
+brew "sqlite"
+# Framework for managing multi-language pre-commit hooks
+brew "pre-commit"
 # Python version management
 brew "pyenv"
 # Pyenv plugin to manage virtualenv
 brew "pyenv-virtualenv"
 # Extremely fast Python linter, written in Rust
 brew "ruff"
-# Command-line interface for SQLite
-brew "sqlite"
 # Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
 # Vi 'workalike' with many additional features
